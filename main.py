@@ -1,4 +1,4 @@
-table = [['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]
+table = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
 
 def printStateOfTable():
     print('-------------')
@@ -10,5 +10,10 @@ def printStateOfTable():
         print(cells)
         print('-------------')
 
+def markCell(row, column, marker):
+    print('hello')
+    table[row][column] = marker
 
+printStateOfTable()
+markCell(1, 2, 'x')
 printStateOfTable()
